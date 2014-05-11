@@ -56,7 +56,7 @@ with(feb, {
   lines(strptime(Times, "%d/%m/%Y %H:%M:%S"), Sub_metering_2, col = "red")
   lines(strptime(Times, "%d/%m/%Y %H:%M:%S"), Sub_metering_3, col = "blue")
   # bty = "n" to turn off border around legend.
-  legend("topright", legend = c("Sub_Metering_1", "Sub_Metering_2", "Sub_Metering_3"), col = c("black", "red", "blue"), lty=c(1,1), bty= "n")
+  legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty=c(1,1), bty= "n")
 })
 with(feb, plot(strptime(Times, "%d/%m/%Y %H:%M:%S"), Global_reactive_power, type = "l" , xlab = "datetime") )
 
@@ -68,3 +68,4 @@ par(opar)
 
 # Manual restoration settings in case something happened during the save/restore process.
 # par(mfrow = c(1,1), mar = c(5.1, 4.1, 4.1, 2.1), cex.lab = 1, cex.axis = 1, mgp = c(3, 1, 0) )
+

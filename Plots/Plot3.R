@@ -51,7 +51,7 @@ with(feb, {
   lines(strptime(Times, "%d/%m/%Y %H:%M:%S"), Sub_metering_2, col = "red")
   lines(strptime(Times, "%d/%m/%Y %H:%M:%S"), Sub_metering_3, col = "blue")
   #Creat the legend with custom colors and names.
-  legend("topright", legend = c("Sub_Metering_1", "Sub_Metering_2", "Sub_Metering_3"), col = c("black", "red", "blue"), lty=c(1,1))
+  legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty=c(1,1))
 })
 
 #shut off graphics device to write file to disk.
